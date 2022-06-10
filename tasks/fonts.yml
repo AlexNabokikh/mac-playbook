@@ -18,6 +18,7 @@
   get_url:
     url: "{{ item.browser_download_url }}"
     dest: "/tmp/{{ item.name }}"
+    mode: 0755
   loop: "{{ font_dl_urls }}"
   throttle: 1
   loop_control:
@@ -27,6 +28,7 @@
   file:
     path: "/tmp/{{ item.name }}-unzip"
     state: directory
+    mode: 0755
   loop: "{{ font_dl_urls }}"
   loop_control:
     label: "{{ item.name }}"
@@ -52,6 +54,7 @@
   copy:
     src: "{{ item.path }}"
     dest: "$HOME/Library/Fonts"
+    mode: 0755
   loop: '{{ font_files.results | map(attribute="files") | flatten }}'
   loop_control:
     label: "{{ item.path }}"
