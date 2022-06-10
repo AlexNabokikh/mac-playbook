@@ -163,28 +163,23 @@ post_provision_tasks: []
 
 ## Included Applications / Configuration (Default)
 
-Packages (installed with Chocolatey):
+Packages (installed with Homebrew):
 
-* 7zip
-* adobereader
-* auto-dark-mode
-* awscli
-* capture2text
-* choco-cleaner
-* choco-upgrade-all-at-startup
-* Firefox
+* appcleaner
+* docker
+* dozer
+* firefox
+* fzf
 * git
-* golang
-* jre8
-* kubernetes-cli
-* microsoft-windows-terminal
-* powertoys
-* python3
-* telegram
-* terraform
-* vlc
-* vscode
-* zoom
+* gpg
+* helm
+* htop
+* jq
+* tfenv
+* tflint
+* tmux
+* vim
+* visual-studio-code
 
 ## Author
 
