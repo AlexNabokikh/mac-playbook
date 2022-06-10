@@ -27,7 +27,7 @@
 
   tasks:
     - import_tasks: tasks/pip.yml
-      when: update_pip_packages
+      when: manage_pip_packages
       tags: ["pip"]
 
     - import_tasks: tasks/sudoers.yml

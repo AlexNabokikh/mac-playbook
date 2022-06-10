@@ -3,6 +3,4 @@
   file:
     path: "{{ item }}"
     state: directory
-  loop:
-    - "$HOME/Downloads/temp"
-    - "$HOME/Documents/repositories"
+  loop: "{{ directories }}"

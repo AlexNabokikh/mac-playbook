@@ -26,7 +26,7 @@ If applicable, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
 
-* Windows version:
+* OSX version:
 * Ansible version:
 
 **Additional context**

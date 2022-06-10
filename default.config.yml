@@ -2,37 +2,25 @@
 downloads: ~/.ansible-downloads/
 
 configure_dotfiles: true
-configure_terminal: true
 configure_osx: true
+configure_terminal: true
 configure_vundle: true
-create_directories: true
-update_pip_packages: true
 
+create_directories: true
+directories:
+  - $HOME/Documents/repositories
+
+manage_pip_packages: true
 pip_executable: pip
-pip_install_packages:
-  - name: pip
+pip_packages:
+  - name: awscli
     state: latest
 
-# Set to 'true' to configure the Dock via dockutil.
 configure_dock: true
 dockitems_remove:
-  - Launchpad
-  - Safari
-  - Messages
-  - Mail
-  - Maps
-  - Photos
-  - FaceTime
-  - Calendar
-  - Contacts
-  - Reminders
-  - Notes
   - TV
-  - Music
   - Podcasts
-  - App Store
-  - System Preferences
-  - Downloads
+
 dockitems_persist:
   - name: Firefox
     path: /Applications/Firefox.app/
@@ -40,33 +28,15 @@ dockitems_persist:
   - name: Slack
     path: /Applications/Slack.app/
     pos: 2
-  - name: Reeder
-    path: /Applications/Reeder.app/
-    pos: 3
   - name: Notion
     path: /Applications/Notion.app/
-    pos: 4
+    pos: 3
   - name: Terminal
     path: /System/Applications/Utilities/Terminal.app
-    pos: 5
+    pos: 4
   - name: Visual Studio Code
     path: /Applications/Visual Studio Code.app/
-    pos: 6
-  - name: Telegram
-    path: /Applications/Telegram.app/
-    pos: 7
-  - name: Spotify
-    path: /Applications/Spotify.app/
-    pos: 8
-  - name: Grammarly Editor
-    path: /Applications/Grammarly Editor.app/
-    pos: 9
-  - name: Microsoft Remote Desktop
-    path: /Applications/Microsoft Remote Desktop.app/
-    pos: 10
-  - name: Session
-    path: /Applications/Session.app/
-    pos: 11
+    pos: 5
 
 configure_sudoers: true
 sudoers_custom_config: |
@@ -90,90 +60,32 @@ dotfiles_files:
   - .zshrc
 
 homebrew_installed_packages:
-  # - aws-vault
-  # - awscli
-  - bat
-  - dive
-  # - eksctl
   - fzf
   - git
   - gpg
   - helm
   - htop
-  - java11
   - jq
-  - krew
-  - kube-linter
-  - kubernetes-cli
-  - minikube
-  - mtr
-  - nmap
-  - pidof
-  - pinentry
-  # - poetry
-  # - pre-commit
-  # - pyenv
-  - reattach-to-user-namespace
-  - telnet
-  - shellcheck
-  - shfmt
-  - terminal-notifier
-  - terraform-docs
-  - terraforming
-  - terragrunt
   - tfenv
   - tflint
   - tmux
-  - tree
   - vim
-  - watch
-  - wget
 
 homebrew_taps:
-  - aws/tap
-  - domt4/autoupdate
   - homebrew/bundle
   - homebrew/cask
-  - homebrew/cask-drivers
-  - homebrew/cask-versions
-  - homebrew/core
-  - homebrew/services
-  - romkatv/powerlevel10k
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - appcleaner
-  - bitwarden
   - docker
   - dozer
   - firefox
-  - focus
-  # - google-chrome
-  - grammarly
-  - itsycal
-  - krisp
-  # - logitech-g-hub
-  - logitech-options
-  - microsoft-remote-desktop
-  - mos
-  - nightowl
-  - notion
-  - onyx
-  - reaper
-  # - slack
-  - spotify
-  - telegram
   - visual-studio-code
-  - vlc
-  - zoom
 
 mas_installed_apps:
-  - {id: 441258766, name: Magnet}
   - {id: 937984704, name: Amphetamine}
   - {id: 984968384, name: Redacted}
-  - {id: 1020812363, name: CopyClip 2 - Clipboard Manager}
-  - {id: 1521432881, name: Session - Pomodoro Focus Timer}
-  - {id: 1528890965, name: TextSniper - OCR simplified}
   - {id: 1529448980, name: Reeder 5.}
 mas_email: ""
 mas_password: ""
