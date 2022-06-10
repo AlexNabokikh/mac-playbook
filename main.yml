@@ -26,33 +26,32 @@
       tags: ["dock"]
 
   tasks:
-    - import_tasks: tasks/pip.yml
-      when: manage_pip_packages
-      tags: ["pip"]
+    - import_tasks: tasks/directories.yml
+      when: create_directories
+      tags: ["directories"]
 
-    - import_tasks: tasks/sudoers.yml
-      when: configure_sudoers
-      tags: ["sudoers"]
+    - import_tasks: tasks/extra-packages.yml
+      tags: ["extra-packages"]
 
     - import_tasks: tasks/fonts.yml
       when: install_fonts
       tags: ["fonts"]
 
-    - import_tasks: tasks/vundle.yml
-      when: configure_vundle
-      tags: ["vundle"]
-
     - import_tasks: tasks/oh-my-zsh.yml
       tags: ["oh-my-zsh.yml"]
-
-    - import_tasks: tasks/terminal.yml
-      when: configure_terminal
-      tags: ["terminal"]
 
     - import_tasks: tasks/osx.yml
       when: configure_osx
       tags: ["osx"]
 
-    - import_tasks: tasks/directories.yml
-      when: create_directories
-      tags: ["directories"]
+    - import_tasks: tasks/sudoers.yml
+      when: configure_sudoers
+      tags: ["sudoers"]
+
+    - import_tasks: tasks/terminal.yml
+      when: configure_terminal
+      tags: ["terminal"]
+
+    - import_tasks: tasks/vundle.yml
+      when: configure_vundle
+      tags: ["vundle"]
