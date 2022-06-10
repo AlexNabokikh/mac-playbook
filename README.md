@@ -18,9 +18,9 @@ This playbook installs and configures most of the software I use on my OSX machi
 > **NOTE:** The Playbook is fully configurable. You can skip or reconfigure any task by [Overriding Defaults](#overriding-defaults).
 
 * **Software**
-  + Ensure software and packages selected by the user are installed via [HomeBrew](https://github.com/Homebrew/brew).
-  + Ensure App Store software selected by the user are installed via [MAS](https://github.com/mas-cli/mas).
-  + Ensure PIP (Python) selected packages selected by the user are installed via [MAS](https://github.com/mas-cli/mas).
+  + Ensure software and packages selected by the user are installed via [Homebrew](https://github.com/Homebrew/brew).
+  + Ensure App Store software selected by the user installed via [MAS](https://github.com/mas-cli/mas).
+  + Ensure PIP (Python) selected packages selected by the user are installed.
 * **Dotfiles**
   + Installs a set of dotfiles from a given Git repository.
 * **System Settings**
