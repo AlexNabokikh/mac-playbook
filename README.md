@@ -23,7 +23,7 @@ This playbook installs and configures most of the software I use on my OSX machi
   + Ensure PIP (Python) selected packages selected by the user are installed via [MAS](https://github.com/mas-cli/mas).
 * **Dotfiles**
   + Installs a set of dotfiles from a given Git repository.
-* **OSX Settings**
+* **System Settings**
   + **Dock**
     - Ensures items in your macOS Dock configured as you want.
   + **Fonts**
