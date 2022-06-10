@@ -1,0 +1,57 @@
+---
+- name: Find latest Nerd Fonts release.
+  uri:
+    url: https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest
+    return_content: true
+  register: nerdfonts_release
+
+- name: Get font download URLs.
+  set_fact:
+    font_dl_urls: >
+      {{
+      font_dl_urls | default([]) + nerdfonts_release.json.assets |
+      selectattr('name', 'equalto', item ~ '.zip')
+      }}
+  loop: "{{ installed_nerdfonts }}"
+
+- name: Download fonts.
+  get_url:
+    url: "{{ item.browser_download_url }}"
+    dest: "/tmp/{{ item.name }}"
+  loop: "{{ font_dl_urls }}"
+  throttle: 1
+  loop_control:
+    label: "{{ item.name }}"
+
+- name: Create an unzip direcotry.
+  file:
+    path: "/tmp/{{ item.name }}-unzip"
+    state: directory
+  loop: "{{ font_dl_urls }}"
+  loop_control:
+    label: "{{ item.name }}"
+
+- name: Extract fonts.
+  ansible.builtin.unarchive:
+    src: "/tmp/{{ item.name }}"
+    dest: "/tmp/{{ item.name }}-unzip"
+  loop: "{{ font_dl_urls }}"
+  loop_control:
+    label: "{{ item.name }}"
+
+- name: Find font files in extracted archive.
+  ansible.builtin.find:
+    paths: "/tmp/{{ item.name }}-unzip"
+    patterns: ["*.ttf"]
+  loop: "{{ font_dl_urls }}"
+  register: font_files
+  loop_control:
+    label: "{{ item.name }}"
+
+- name: Install fonts.
+  copy:
+    src: "{{ item.path }}"
+    dest: "$HOME/Library/Fonts"
+  loop: '{{ font_files.results | map(attribute="files") | flatten }}'
+  loop_control:
+    label: "{{ item.path }}"

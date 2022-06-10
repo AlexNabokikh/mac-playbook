@@ -1,0 +1,24 @@
+---
+- name: Ensure oh-my-zsh installed.
+  git:
+    repo: https://github.com/robbyrussell/oh-my-zsh
+    dest: $HOME/.oh-my-zsh
+    version: master
+    clone: true
+    update: true
+
+- name: Ensure Powerlevel10k installed.
+  git:
+    repo: https://github.com/romkatv/powerlevel10k.git
+    dest: $HOME/.oh-my-zsh/custom/themes/powerlevel10k
+    version: master
+    clone: true
+    update: true
+
+- name: Ensure zsh-history-substring-search installed.
+  git:
+    repo: https://github.com/zsh-users/zsh-history-substring-search
+    dest: $HOME/.oh-my-zsh/custom/plugins/zsh-history-substring-search
+    version: master
+    clone: true
+    update: true

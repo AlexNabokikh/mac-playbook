@@ -1,0 +1,8 @@
+---
+- name: Ensure temp and repo directories are present.
+  file:
+    path: "{{ item }}"
+    state: directory
+  loop:
+    - "$HOME/Downloads/temp"
+    - "$HOME/Documents/repositories"
