@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0](https://github.com/AlexNabokikh/mac-playbook/compare/v1.0.1...v1.1.0) (2022-06-10)
+
+
+### Features
+
+* **extra-packages:** pip replaced with 'extra packages' ([057360d](https://github.com/AlexNabokikh/mac-playbook/commit/057360da40b8e99e5fdfef9fe0f1a5710df5c52e))
+* **README.md:** trimmed 'overriding defaults' section ([6e5dda9](https://github.com/AlexNabokikh/mac-playbook/commit/6e5dda92166ba98369fd53ec32f1b5912c90aca9))
+
+
+### Bug Fixes
+
+* **vundle.yml:** fixed task definition ([fcbd97f](https://github.com/AlexNabokikh/mac-playbook/commit/fcbd97fa6f375995fa3ab502756823cbf3ee081b))
+
 ### [1.0.1](https://github.com/AlexNabokikh/mac-playbook/compare/v1.0.0...v1.0.1) (2022-06-10)
 
 
