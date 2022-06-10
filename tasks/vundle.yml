@@ -1,0 +1,16 @@
+---
+- name: Clone a github repository.
+  git:
+    repo: https://github.com/VundleVim/Vundle.vim.git
+    dest: $HOME/.vim/bundle/Vundle.vim
+    mode: 0755
+    clone: true
+    update: true
+
+- name: Ensure plugins set in .vimrc are installed.
+  shell:
+    cmd: vim -c "execute \"PluginInstall\" | qa"
+
+- name: Ensure plugins set in .vimrc are updated.
+  shell:
+    cmd: vim -c "execute \"PluginUpdate\" | qa"

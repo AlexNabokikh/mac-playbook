@@ -1,0 +1,6 @@
+---
+skip_list:
+  - fqcn-builtins
+  - package-latest
+  - git-latest
+  - no-changed-when
