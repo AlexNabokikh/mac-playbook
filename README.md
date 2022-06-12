@@ -1,4 +1,4 @@
-# Windows Ansible Playbook
+# macOS Ansible Playbook
 
 ![badge-gh-actions]
 ![badge-license]
@@ -18,26 +18,28 @@ This playbook installs and configures most of the software I use on my OSX machi
 > **NOTE:** The Playbook is fully configurable. You can skip or reconfigure any task by [Overriding Defaults](#overriding-defaults).
 
 * **Software**
-  + Ensure software and packages selected by the user are installed via [Homebrew](https://github.com/Homebrew/brew).
-  + Ensure App Store software selected by the user installed via [MAS](https://github.com/mas-cli/mas).
-  + Ensure PIP (Python) selected packages selected by the user are installed.
+  * Ensure software and packages selected by the user are installed via [Homebrew](https://github.com/Homebrew/brew).
+  * Ensure App Store software selected by the user installed via [MAS](https://github.com/mas-cli/mas).
+  * Ensure PIP (Python) selected packages selected by the user are installed.
 * **Dotfiles**
-  + Installs a set of dotfiles from a given Git repository.
+  * Installs a set of dotfiles from a given Git repository.
 * **System Settings**
-  + **Dock**
-    - Ensures items in your macOS Dock configured as you want.
-  + **Fonts**
-    - Ensures chosen custom fonts are installed.
-  + **directories**
-    - Ensures custom user directories created.
+  * **Dock**
+    * Ensures items in your macOS Dock configured as you want.
+  * **Fonts**
+    * Ensures chosen custom fonts are installed.
+  * **directories**
+    * Ensures custom user directories created.
+  * **gpg config**
+    * Ensures users's gpg config and gpg agent config are copied to the home directory.
 * **Terminal Settings**
-  + **Sudoers**
-    - Ensures custom user sudoers config applied.
-  + **Vim**
-    - Ensures [Vundle plugin manager](https://github.com/VundleVim/Vundle.vim) installed.
-    - Ensures plugins from your .vimconfig are installed and updated.
-  + **Oh-My-Zsh**
-    - Ensures [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) installed and configured.
+  * **Sudoers**
+    * Ensures custom user sudoers config applied.
+  * **Vim**
+    * Ensures [Vundle plugin manager](https://github.com/VundleVim/Vundle.vim) installed.
+    * Ensures plugins from your .vimconfig are installed and updated.
+  * **Oh-My-Zsh**
+    * Ensures [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) installed and configured.
 
 ## Installation
 
