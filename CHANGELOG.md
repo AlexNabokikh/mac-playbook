@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0](https://github.com/AlexNabokikh/mac-playbook/compare/v1.1.0...v1.2.0) (2022-06-12)
+
+
+### Features
+
+* added gpg configuration task ([972f81f](https://github.com/AlexNabokikh/mac-playbook/commit/972f81fbea22cd70841ec56700fec73936390033))
+
 ## [1.1.0](https://github.com/AlexNabokikh/mac-playbook/compare/v1.0.1...v1.1.0) (2022-06-10)
 
 
