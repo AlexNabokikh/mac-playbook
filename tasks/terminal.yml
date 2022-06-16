@@ -14,7 +14,7 @@
   when: "'OneHalfDark.terminal' not in terminal_theme.stdout"
 
 - name: Ensure custom Terminal profile is added.
-  coansible.builtin.commandmmand: open /tmp/OneHalfDark.terminal
+  ansible.builtin.command: open /tmp/OneHalfDark.terminal
   changed_when: false
   when: "'OneHalfDark.terminal' not in terminal_theme.stdout"
 
