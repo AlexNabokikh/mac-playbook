@@ -1,12 +1,12 @@
 ---
 - name: Find latest Nerd Fonts release.
-  uri:
+  ansible.builtin.uri:
     url: https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest
     return_content: true
   register: nerdfonts_release
 
 - name: Get font download URLs.
-  set_fact:
+  ansible.builtin.set_fact:
     font_dl_urls: >
       {{
       font_dl_urls | default([]) + nerdfonts_release.json.assets |
@@ -15,7 +15,7 @@
   loop: "{{ installed_nerdfonts }}"
 
 - name: Download fonts.
-  get_url:
+  ansible.builtin.get_url:
     url: "{{ item.browser_download_url }}"
     dest: "/tmp/{{ item.name }}"
     mode: 0755
@@ -25,7 +25,7 @@
     label: "{{ item.name }}"
 
 - name: Create an unzip direcotry.
-  file:
+  ansible.builtin.file:
     path: "/tmp/{{ item.name }}-unzip"
     state: directory
     mode: 0755
@@ -51,7 +51,7 @@
     label: "{{ item.name }}"
 
 - name: Install fonts.
-  copy:
+  ansible.builtin.copy:
     src: "{{ item.path }}"
     dest: "$HOME/Library/Fonts"
     mode: 0755

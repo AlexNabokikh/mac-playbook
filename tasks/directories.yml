@@ -1,6 +1,6 @@
 ---
 - name: Ensure temp and repo directories are present.
-  file:
+  ansible.builtin.file:
     path: "{{ item }}"
     state: directory
     mode: 0755
