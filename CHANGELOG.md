@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.2.2](https://github.com/AlexNabokikh/mac-playbook/compare/v1.2.1...v1.2.2) (2022-06-16)
+
+
+### Bug Fixes
+
+* refactored modules definition according to best practices ([39dfadb](https://github.com/AlexNabokikh/mac-playbook/commit/39dfadb86873af610b1e0770c7482cf1d2c8e248))
+* **terminal.yml:** fixed typo ([13c7ace](https://github.com/AlexNabokikh/mac-playbook/commit/13c7ace531c85f7d540a3b355e29b57b62daa596))
+
 ### [1.2.1](https://github.com/AlexNabokikh/mac-playbook/compare/v1.2.0...v1.2.1) (2022-06-12)
 
 
