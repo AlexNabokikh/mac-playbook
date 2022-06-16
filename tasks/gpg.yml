@@ -7,13 +7,13 @@
   register: gnupg_dir
 
 - name: Ensure gpg-agent.conf copied.
-  copy:
+  ansible.builtin.copy:
     src: "files/gpg/gpg-agent.conf"
     dest: "{{ gnupg_dir.path }}/gpg-agent.conf"
     mode: "0600"
 
 - name: Ensure gpg.conf copied.
-  copy:
+  ansible.builtin.copy:
     src: "files/gpg/gpg.conf"
     dest: "{{ gnupg_dir.path }}/gpg.conf"
     mode: "0600"

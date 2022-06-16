@@ -1,12 +1,12 @@
 ---
 - name: Get current Terminal profile.
-  command: defaults read com.apple.terminal 'Default Window Settings'
+  ansible.builtin.command: defaults read com.apple.terminal 'Default Window Settings'
   register: terminal_theme
   changed_when: false
   check_mode: false
 
 - name: Ensure custom Terminal profile is added.
-  copy:
+  ansible.builtin.copy:
     src: files/terminal/OneHalfDark.terminal
     dest: /tmp/OneHalfDark.terminal
     mode: 0755
@@ -14,12 +14,12 @@
   when: "'OneHalfDark.terminal' not in terminal_theme.stdout"
 
 - name: Ensure custom Terminal profile is added.
-  command: open /tmp/OneHalfDark.terminal
+  coansible.builtin.commandmmand: open /tmp/OneHalfDark.terminal
   changed_when: false
   when: "'OneHalfDark.terminal' not in terminal_theme.stdout"
 
 - name: Ensure custom Terminal profile is set as default.
-  command: "{{ item }}"
+  ansible.builtin.command: "{{ item }}"
   with_items:
     - defaults write com.apple.terminal 'Default Window Settings' -string OneHalfDark
     - defaults write com.apple.terminal 'Startup Window Settings' -string OneHalfDark
