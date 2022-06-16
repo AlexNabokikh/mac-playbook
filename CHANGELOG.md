@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0](https://github.com/AlexNabokikh/mac-playbook/compare/v1.2.2...v1.3.0) (2022-06-16)
+
+
+### Features
+
+* adjusted linters ([dea09e2](https://github.com/AlexNabokikh/mac-playbook/commit/dea09e26c8fa0b4dc411a23a8c5084ad3624633f))
+
 ### [1.2.2](https://github.com/AlexNabokikh/mac-playbook/compare/v1.2.1...v1.2.2) (2022-06-16)
 
 
