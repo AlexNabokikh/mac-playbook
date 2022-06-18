@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.0](https://github.com/AlexNabokikh/mac-playbook/compare/v1.3.0...v1.4.0) (2022-06-18)
+
+
+### Features
+
+* added more tasks parameters ([73fc311](https://github.com/AlexNabokikh/mac-playbook/commit/73fc311c894d2f6bcd2c6f78f4fa3c7c425d1c7b))
+
 ## [1.3.0](https://github.com/AlexNabokikh/mac-playbook/compare/v1.2.2...v1.3.0) (2022-06-16)
 
 
