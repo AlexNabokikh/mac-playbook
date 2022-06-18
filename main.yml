@@ -31,6 +31,7 @@
       tags: ["directories"]
 
     - import_tasks: tasks/extra-packages.yml
+      when: install_extra_packages
       tags: ["extra-packages"]
 
     - import_tasks: tasks/fonts.yml
@@ -38,9 +39,11 @@
       tags: ["fonts"]
 
     - import_tasks: tasks/gpg.yml
+      when: configure_gpg
       tags: ["gpg"]
 
     - import_tasks: tasks/oh-my-zsh.yml
+      when: install_oh_my_zsh
       tags: ["oh-my-zsh.yml"]
 
     - import_tasks: tasks/osx.yml

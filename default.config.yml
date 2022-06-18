@@ -2,15 +2,17 @@
 downloads: ~/.ansible-downloads/
 
 configure_dotfiles: true
+configure_gpg: false
 configure_osx: true
 configure_terminal: true
 configure_vundle: true
+install_oh_my_zsh: false
 
 create_directories: true
 directories:
   - $HOME/Documents/repositories
 
-manage_pip_packages: true
+install_extra_packages: true
 pip_executable: pip
 pip_packages:
   - name: awscli
