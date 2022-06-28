@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.5.1](https://github.com/AlexNabokikh/mac-playbook/compare/v1.5.0...v1.5.1) (2022-06-28)
+
+
+### Bug Fixes
+
+* **default.config.yml:** too many spaces inside braces ([1e8ffe5](https://github.com/AlexNabokikh/mac-playbook/commit/1e8ffe5866912914670f93ec1388610de21a7990))
+
 ## [1.5.0](https://github.com/AlexNabokikh/mac-playbook/compare/v1.4.0...v1.5.0) (2022-06-28)
 
 
