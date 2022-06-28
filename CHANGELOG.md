@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.5.0](https://github.com/AlexNabokikh/mac-playbook/compare/v1.4.0...v1.5.0) (2022-06-28)
+
+
+### Features
+
+* **extra-packages:** added npm package install task ([8fdab11](https://github.com/AlexNabokikh/mac-playbook/commit/8fdab1129764e691b2f528f48da9744013f75c88))
+
 ## [1.4.0](https://github.com/AlexNabokikh/mac-playbook/compare/v1.3.0...v1.4.0) (2022-06-18)
 
 
