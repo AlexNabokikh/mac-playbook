@@ -86,9 +86,9 @@ homebrew_cask_apps:
   - visual-studio-code
 
 mas_installed_apps:
-  - { id: 937984704, name: Amphetamine }
-  - { id: 984968384, name: Redacted }
-  - { id: 1529448980, name: Reeder 5. }
+  - {id: 937984704, name: Amphetamine}
+  - {id: 984968384, name: Redacted}
+  - {id: 1529448980, name: Reeder 5.}
 mas_email: ""
 mas_password: ""
 
