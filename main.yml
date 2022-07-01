@@ -44,7 +44,7 @@
 
     - import_tasks: tasks/oh-my-zsh.yml
       when: install_oh_my_zsh
-      tags: ["oh-my-zsh.yml"]
+      tags: ["ohmyz"]
 
     - import_tasks: tasks/osx.yml
       when: configure_osx
