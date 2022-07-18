@@ -74,6 +74,10 @@ pip_executable: pip
 pip_packages:
   - name: mkdocs
 
+npm_packages:
+  - name: prettier
+    state: latest
+
 configure_dock: true
 dockitems_remove:
   - TV
@@ -104,8 +108,8 @@ homebrew_cask_apps:
   - visual-studio-code
 
 mas_installed_apps:
-  - { id: 937984704, name: Amphetamine }
-  - { id: 984968384, name: Redacted }
+  - {id: 937984704, name: Amphetamine}
+  - {id: 984968384, name: Redacted}
 mas_email: ""
 mas_password: ""
 ```
