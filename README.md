@@ -21,6 +21,7 @@ This playbook installs and configures most of the software I use on my OSX machi
   - Ensure software and packages selected by the user are installed via [Homebrew](https://github.com/Homebrew/brew).
   - Ensure App Store software selected by the user installed via [MAS](https://github.com/mas-cli/mas).
   - Ensure PIP (Python) selected packages selected by the user are installed.
+  - Ensure NPM (JS) selected packages selected by the user are installed.
 - **Dotfiles**
   - Installs a set of dotfiles from a given Git repository.
 - **System Settings**
@@ -74,6 +75,10 @@ pip_executable: pip
 pip_packages:
   - name: mkdocs
 
+npm_packages:
+  - name: prettier
+    state: latest
+
 configure_dock: true
 dockitems_remove:
   - TV
@@ -104,8 +109,8 @@ homebrew_cask_apps:
   - visual-studio-code
 
 mas_installed_apps:
-  - { id: 937984704, name: Amphetamine }
-  - { id: 984968384, name: Redacted }
+  - {id: 937984704, name: Amphetamine}
+  - {id: 984968384, name: Redacted}
 mas_email: ""
 mas_password: ""
 ```
