@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.5.3](https://github.com/AlexNabokikh/mac-playbook/compare/v1.5.2...v1.5.3) (2022-07-18)
+
+
+### Bug Fixes
+
+* **README.md:** added missing npm example ([67448a5](https://github.com/AlexNabokikh/mac-playbook/commit/67448a5d54dafade8a70638cb335c1dc9fd8d773))
+* **README.md:** added NPM installer to a capabilities list ([b63c344](https://github.com/AlexNabokikh/mac-playbook/commit/b63c344f1c71399d0fa7b86c3d1d49a0b4778386))
+
 ### [1.5.2](https://github.com/AlexNabokikh/mac-playbook/compare/v1.5.1...v1.5.2) (2022-07-01)
 
 
