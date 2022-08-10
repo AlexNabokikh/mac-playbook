@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.6.0](https://github.com/AlexNabokikh/mac-playbook/compare/v1.5.3...v1.6.0) (2022-08-10)
+
+
+### Features
+
+* **OneHalfDark.terminal:** changed default terminal size to 170 x 45 ([ee37b4b](https://github.com/AlexNabokikh/mac-playbook/commit/ee37b4bcd257b8dc642dfd1c81b300b4a19e0cd0))
+
 ### [1.5.3](https://github.com/AlexNabokikh/mac-playbook/compare/v1.5.2...v1.5.3) (2022-07-18)
 
 
