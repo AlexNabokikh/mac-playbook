@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [1.6.1](https://github.com/AlexNabokikh/mac-playbook/compare/v1.6.0...v1.6.1) (2022-08-23)
+
+
+### Bug Fixes
+
+* **vundle:** fixed vundle stuck when using custom .vimrc config ([1c3178d](https://github.com/AlexNabokikh/mac-playbook/commit/1c3178dd88e1d3a02f0ff4fda5cc575a92b6ba03))
+
 ## [1.6.0](https://github.com/AlexNabokikh/mac-playbook/compare/v1.5.3...v1.6.0) (2022-08-10)
 
 
