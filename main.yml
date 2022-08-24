@@ -58,6 +58,6 @@
       when: configure_terminal
       tags: ["terminal"]
 
-    - import_tasks: tasks/vundle.yml
-      when: configure_vundle
-      tags: ["vundle"]
+    - import_tasks: tasks/vim-plug.yml
+      when: install_vim_plug
+      tags: ["vim"]
