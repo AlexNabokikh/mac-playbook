@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.0](https://github.com/AlexNabokikh/mac-playbook/compare/v1.6.1...v2.0.0) (2022-08-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* replaced vundle with vim-plug
+
+### Features
+
+* replaced vundle with vim-plug ([17e5db8](https://github.com/AlexNabokikh/mac-playbook/commit/17e5db82337080e5b2ea8ce793d0b00d061662aa))
+
+
+### Bug Fixes
+
+* **vim-plug:** added correct file permissions ([dbf2f8f](https://github.com/AlexNabokikh/mac-playbook/commit/dbf2f8f50fcdb2bf98692bc12656082f440b2d02))
+* **vim-plug:** replaced shell with command ([192ead7](https://github.com/AlexNabokikh/mac-playbook/commit/192ead71b46110dfa12f10e051c042a8fac549df))
+
 ### [1.6.1](https://github.com/AlexNabokikh/mac-playbook/compare/v1.6.0...v1.6.1) (2022-08-23)
 
 
