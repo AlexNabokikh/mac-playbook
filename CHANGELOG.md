@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.1.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.0.0...v2.1.0) (2022-12-15)
+
+
+### Features
+
+* changed tasks wording ([37fcb71](https://github.com/AlexNabokikh/mac-playbook/commit/37fcb71c1af0e629560be5b690e3b76079293a09))
+* **task:** added asdf tool version manager task ([f567c7d](https://github.com/AlexNabokikh/mac-playbook/commit/f567c7d840b0438e762cfaa785809f6b2ad28a45))
+
+
+### Bug Fixes
+
+* **asdf:** replaced shell with command module ([9a55292](https://github.com/AlexNabokikh/mac-playbook/commit/9a55292b9f44231469a4158c49edf50be1508e0e))
+
 ## [2.0.0](https://github.com/AlexNabokikh/mac-playbook/compare/v1.6.1...v2.0.0) (2022-08-24)
 
 
