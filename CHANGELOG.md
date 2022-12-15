@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+### [2.1.1](https://github.com/AlexNabokikh/mac-playbook/compare/v2.1.0...v2.1.1) (2022-12-15)
+
+
+### Bug Fixes
+
+* **readme:** fixed tags list ([17c541a](https://github.com/AlexNabokikh/mac-playbook/commit/17c541a88da541f0246ae806d70c481218733720))
+
 ## [2.1.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.0.0...v2.1.0) (2022-12-15)
 
 
