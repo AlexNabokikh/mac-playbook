@@ -26,6 +26,9 @@
       tags: ["dock"]
 
   tasks:
+    - import_tasks: tasks/asdf.yml
+      tags: ["asdf"]
+
     - import_tasks: tasks/directories.yml
       when: create_directories
       tags: ["directories"]
