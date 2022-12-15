@@ -7,7 +7,7 @@
   register: asdf_dir
 
 - name: Install asdf plugins
-  ansible.builtin.shell: >-
+  ansible.builtin.command: >-
     asdf plugin-add {{ item.name }} {{ item.repository | default() }}
   args:
     creates: "{{ asdf_dir.path }}/plugins/{{ item.name }}"
@@ -15,7 +15,7 @@
   with_items: "{{ asdf_plugins }}"
 
 - name: Install asdf packages
-  ansible.builtin.shell: >-
+  ansible.builtin.command: >-
     asdf install {{ item.0.name }} {{ item.1 }}
   args:
     creates: "{{ asdf_dir.path }}/installs/{{ item.0.name }}/{{ item.1 }}"
@@ -27,7 +27,7 @@
       skip_missing: true
 
 - name: Get current asdf package versions
-  ansible.builtin.shell: >-
+  ansible.builtin.command: >-
     set -o pipefail &&
     asdf current {{ item.name }} |
     grep -o '{{ item.global }}'
@@ -40,7 +40,7 @@
   failed_when: false
 
 - name: Set global asdf package versions
-  ansible.builtin.shell: >-
+  ansible.builtin.command: >-
     asdf global {{ item.item.name }}
     {{ item.item.global | default(item.item.versions[0]) }}
   args:
