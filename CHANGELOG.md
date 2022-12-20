@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.2.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.1.1...v2.2.0) (2022-12-20)
+
+
+### Features
+
+* **ci:** semver deps update ([eae4bac](https://github.com/AlexNabokikh/mac-playbook/commit/eae4bac298cdcd87ca0a36590c7bb9e694a22f75))
+
 ### [2.1.1](https://github.com/AlexNabokikh/mac-playbook/compare/v2.1.0...v2.1.1) (2022-12-15)
 
 
