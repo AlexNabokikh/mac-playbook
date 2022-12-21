@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.3.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.2.0...v2.3.0) (2022-12-21)
+
+
+### Features
+
+* **asdf:** getting rid of asdf ([0c66b4a](https://github.com/AlexNabokikh/mac-playbook/commit/0c66b4a88db350ed564f71038870d1ea733035e6))
+
 ## [2.2.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.1.1...v2.2.0) (2022-12-20)
 
 
