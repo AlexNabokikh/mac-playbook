@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.4.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.3.0...v2.4.0) (2023-03-31)
+
+
+### Features
+
+* **main.yml:** refactored playbook entrypoint ([fadeb72](https://github.com/AlexNabokikh/mac-playbook/commit/fadeb720951e8931bbc5b8a292a5653500fe5a35))
+
+
+### Bug Fixes
+
+* **deps:** bumped pipeline dependecies ([9375a73](https://github.com/AlexNabokikh/mac-playbook/commit/9375a73642e4b7acd624fff1bf5d349172aa0330))
+* fixed forbidden implicit octal values ([bdbca85](https://github.com/AlexNabokikh/mac-playbook/commit/bdbca858a1a9acc8073210996ad78e90c68ab3da))
+
 ## [2.3.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.2.0...v2.3.0) (2022-12-21)
 
 
