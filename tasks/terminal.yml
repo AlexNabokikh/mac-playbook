@@ -9,7 +9,7 @@
   ansible.builtin.copy:
     src: files/terminal/OneHalfDark.terminal
     dest: /tmp/OneHalfDark.terminal
-    mode: 0755
+    mode: "0755"
   changed_when: false
   when: "'OneHalfDark.terminal' not in terminal_theme.stdout"
 
