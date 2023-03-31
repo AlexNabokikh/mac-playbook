@@ -1,12 +1,13 @@
 ---
-- hosts: all
+- name: MacOS Playbook
+  hosts: all
 
   vars_files:
     - default.config.yml
 
   pre_tasks:
-    - name: Include playbook configuration.
-      include_vars: "{{ item }}"
+    - name: Include playbook user configuration.
+      ansible.builtin.include_vars: "{{ item }}"
       with_fileglob:
         - "{{ playbook_dir }}/config.yml"
       tags: ["always"]
@@ -26,38 +27,56 @@
       tags: ["dock"]
 
   tasks:
-    - import_tasks: tasks/directories.yml
+    - name: Include directories task configuration.
+      ansible.builtin.import_tasks:
+        file: tasks/directories.yml
       when: create_directories
       tags: ["directories"]
 
-    - import_tasks: tasks/extra-packages.yml
+    - name: Include extra-packages task configuration.
+      ansible.builtin.import_tasks:
+        file: tasks/extra-packages.yml
       when: install_extra_packages
       tags: ["extra-packages"]
 
-    - import_tasks: tasks/fonts.yml
+    - name: Include fonts task configuration.
+      ansible.builtin.import_tasks:
+        file: tasks/fonts.yml
       when: install_fonts
       tags: ["fonts"]
 
-    - import_tasks: tasks/gpg.yml
+    - name: Include gpg task configuration.
+      ansible.builtin.import_tasks:
+        file: tasks/gpg.yml
       when: configure_gpg
       tags: ["gpg"]
 
-    - import_tasks: tasks/oh-my-zsh.yml
+    - name: Include oh-my-zsh task configuration.
+      ansible.builtin.import_tasks:
+        file: tasks/oh-my-zsh.yml
       when: install_oh_my_zsh
       tags: ["ohmyz"]
 
-    - import_tasks: tasks/osx.yml
+    - name: Include osx task configuration.
+      ansible.builtin.import_tasks:
+        file: tasks/osx.yml
       when: configure_osx
       tags: ["osx"]
 
-    - import_tasks: tasks/sudoers.yml
+    - name: Include sudoers task configuration.
+      ansible.builtin.import_tasks:
+        file: tasks/sudoers.yml
       when: configure_sudoers
       tags: ["sudoers"]
 
-    - import_tasks: tasks/terminal.yml
+    - name: Include terminal task configuration.
+      ansible.builtin.import_tasks:
+        file: tasks/terminal.yml
       when: configure_terminal
       tags: ["terminal"]
 
-    - import_tasks: tasks/vim-plug.yml
+    - name: Include vim-plug task configuration.
+      ansible.builtin.import_tasks:
+        file: tasks/vim-plug.yml
       when: install_vim_plug
       tags: ["vim"]
