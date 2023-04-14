@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.5.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.4.0...v2.5.0) (2023-04-14)
+
+
+### Features
+
+* **terminal:** changed default terminal size ([b970dcb](https://github.com/AlexNabokikh/mac-playbook/commit/b970dcb58875c71aa6b19251845bbbcecbbb7398))
+* **terminal:** changed default terminal theme to nord ([850e631](https://github.com/AlexNabokikh/mac-playbook/commit/850e63174795ac6b4b1f5a433db1ccebedebf65b))
+* **tmux:** added tmux tpm installation ([d8d5c79](https://github.com/AlexNabokikh/mac-playbook/commit/d8d5c793de191798e5dc14c2bf53192af49e7ba9))
+
 ## [2.4.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.3.0...v2.4.0) (2023-03-31)
 
 
