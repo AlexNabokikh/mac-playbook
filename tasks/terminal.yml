@@ -7,21 +7,21 @@
 
 - name: Add custom Terminal profile.
   ansible.builtin.copy:
-    src: files/terminal/OneHalfDark.terminal
-    dest: /tmp/OneHalfDark.terminal
+    src: files/terminal/Nord.terminal
+    dest: /tmp/Nord.terminal
     mode: "0755"
   changed_when: false
-  when: "'OneHalfDark.terminal' not in terminal_theme.stdout"
+  when: "'Nord.terminal' not in terminal_theme.stdout"
 
 - name: Add custom Terminal profile.
-  ansible.builtin.command: open /tmp/OneHalfDark.terminal
+  ansible.builtin.command: open /tmp/Nord.terminal
   changed_when: false
-  when: "'OneHalfDark.terminal' not in terminal_theme.stdout"
+  when: "'Nord.terminal' not in terminal_theme.stdout"
 
 - name: Set custom Terminal profile as default.
   ansible.builtin.command: "{{ item }}"
   with_items:
-    - defaults write com.apple.terminal 'Default Window Settings' -string OneHalfDark
-    - defaults write com.apple.terminal 'Startup Window Settings' -string OneHalfDark
+    - defaults write com.apple.terminal 'Default Window Settings' -string Nord
+    - defaults write com.apple.terminal 'Startup Window Settings' -string Nord
   changed_when: false
-  when: "'OneHalfDark' not in terminal_theme.stdout"
+  when: "'Nord' not in terminal_theme.stdout"
