@@ -224,8 +224,12 @@
 	<false/>
 	<key>WindowTitle</key>
 	<string>Nord</string>
+	<key>columnCount</key>
+	<integer>150</integer>
 	<key>name</key>
 	<string>Nord</string>
+	<key>rowCount</key>
+	<integer>40</integer>
 	<key>type</key>
 	<string>Window Settings</string>
 </dict>
