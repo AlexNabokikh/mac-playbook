@@ -69,6 +69,12 @@
       when: configure_sudoers
       tags: ["sudoers"]
 
+    - name: Include tmux task configuration.
+      ansible.builtin.import_tasks:
+        file: tasks/tmux.yml
+      when: configure_terminal
+      tags: ["terminal"]
+
     - name: Include terminal task configuration.
       ansible.builtin.import_tasks:
         file: tasks/terminal.yml
