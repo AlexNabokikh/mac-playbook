@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.6.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.5.0...v2.6.0) (2023-04-15)
+
+
+### Features
+
+* **terminal:** changed default terminal theme ([b643bfc](https://github.com/AlexNabokikh/mac-playbook/commit/b643bfccf409541b0ac12700726e7738083d9a5e))
+
 ## [2.5.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.4.0...v2.5.0) (2023-04-14)
 
 
