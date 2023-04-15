@@ -7,16 +7,16 @@
 
 - name: Add custom Terminal profile.
   ansible.builtin.copy:
-    src: files/terminal/Nord.terminal
-    dest: /tmp/Nord.terminal
+    src: files/terminal/Macchiato.terminal
+    dest: /tmp/Macchiato.terminal
     mode: "0755"
   changed_when: false
-  when: "'Nord.terminal' not in terminal_theme.stdout"
+  when: "'Macchiato.terminal' not in terminal_theme.stdout"
 
 - name: Add custom Terminal profile.
-  ansible.builtin.command: open /tmp/Nord.terminal
+  ansible.builtin.command: open /tmp/Macchiato.terminal
   changed_when: false
-  when: "'Nord.terminal' not in terminal_theme.stdout"
+  when: "'Macchiato.terminal' not in terminal_theme.stdout"
 
 - name: Set custom Terminal profile as default.
   ansible.builtin.command: "{{ item }}"
