@@ -21,7 +21,7 @@
 - name: Set custom Terminal profile as default.
   ansible.builtin.command: "{{ item }}"
   with_items:
-    - defaults write com.apple.terminal 'Default Window Settings' -string Nord
-    - defaults write com.apple.terminal 'Startup Window Settings' -string Nord
+    - defaults write com.apple.terminal 'Default Window Settings' -string Macchiato
+    - defaults write com.apple.terminal 'Startup Window Settings' -string Macchiato
   changed_when: false
-  when: "'Nord' not in terminal_theme.stdout"
+  when: "'Macchiato' not in terminal_theme.stdout"
