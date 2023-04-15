@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.6.1](https://github.com/AlexNabokikh/mac-playbook/compare/v2.6.0...v2.6.1) (2023-04-15)
+
+
+### Bug Fixes
+
+* **terminal:** adjusted task settings ([a4bb5db](https://github.com/AlexNabokikh/mac-playbook/commit/a4bb5dbd112acec449c47c0b79208893ef8e56b6))
+
 ## [2.6.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.5.0...v2.6.0) (2023-04-15)
 
 
