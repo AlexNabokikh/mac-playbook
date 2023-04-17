@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.7.1](https://github.com/AlexNabokikh/mac-playbook/compare/v2.7.0...v2.7.1) (2023-04-17)
+
+
+### Bug Fixes
+
+* **terminal:** fixed font type ([d58b451](https://github.com/AlexNabokikh/mac-playbook/commit/d58b45159a25f966dee960df1f75acc843a9139a))
+
 ## [2.7.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.6.1...v2.7.0) (2023-04-17)
 
 
