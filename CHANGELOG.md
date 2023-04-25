@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.8.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.7.1...v2.8.0) (2023-04-25)
+
+
+### Features
+
+* **tmux:** added tmux plugin installation and upgrade stepes ([b3610c9](https://github.com/AlexNabokikh/mac-playbook/commit/b3610c9fdbd03af86adb64c275a743e5f03c1f21))
+
 ## [2.7.1](https://github.com/AlexNabokikh/mac-playbook/compare/v2.7.0...v2.7.1) (2023-04-17)
 
 
