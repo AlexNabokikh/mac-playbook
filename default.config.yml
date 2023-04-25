@@ -3,10 +3,11 @@ downloads: ~/.ansible-downloads/
 
 configure_dotfiles: true
 configure_gpg: false
-configure_osx: true
+configure_osx: false
 configure_terminal: true
-configure_vundle: true
-install_oh_my_zsh: false
+configure_tmux: false
+install_oh_my_zsh: true
+install_vim_plug: false
 
 create_directories: true
 directories:
@@ -27,18 +28,9 @@ dockitems_persist:
   - name: Firefox
     path: /Applications/Firefox.app/
     pos: 1
-  - name: Slack
-    path: /Applications/Slack.app/
-    pos: 2
-  - name: Notion
-    path: /Applications/Notion.app/
-    pos: 3
-  - name: Terminal
-    path: /System/Applications/Utilities/Terminal.app
-    pos: 4
   - name: Visual Studio Code
     path: /Applications/Visual Studio Code.app/
-    pos: 5
+    pos: 2
 
 configure_sudoers: true
 sudoers_custom_config: |
@@ -87,8 +79,6 @@ homebrew_cask_apps:
 
 mas_installed_apps:
   - {id: 937984704, name: Amphetamine}
-  - {id: 984968384, name: Redacted}
-  - {id: 1529448980, name: Reeder 5.}
 mas_email: ""
 mas_password: ""
 
