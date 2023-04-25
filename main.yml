@@ -72,8 +72,8 @@
     - name: Include tmux task configuration.
       ansible.builtin.import_tasks:
         file: tasks/tmux.yml
-      when: configure_terminal
-      tags: ["terminal"]
+      when: configure_tmux
+      tags: ["tmux"]
 
     - name: Include terminal task configuration.
       ansible.builtin.import_tasks:
