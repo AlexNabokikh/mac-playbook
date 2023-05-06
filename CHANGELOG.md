@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.9.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.8.0...v2.9.0) (2023-05-06)
+
+
+### Features
+
+* **terminal:** changed the main theme ([8103073](https://github.com/AlexNabokikh/mac-playbook/commit/8103073ca09f032b337ab672c87a9be5c3817866))
+
 ## [2.8.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.7.1...v2.8.0) (2023-04-25)
 
 
