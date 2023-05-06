@@ -7,21 +7,21 @@
 
 - name: Add custom Terminal profile.
   ansible.builtin.copy:
-    src: files/terminal/Frappe.terminal
-    dest: /tmp/Frappe.terminal
+    src: files/terminal/Macchiato.terminal
+    dest: /tmp/Macchiato.terminal
     mode: "0755"
   changed_when: false
-  when: "'Frappe.terminal' not in terminal_theme.stdout"
+  when: "'Macchiato.terminal' not in terminal_theme.stdout"
 
 - name: Add custom Terminal profile.
-  ansible.builtin.command: open /tmp/Frappe.terminal
+  ansible.builtin.command: open /tmp/Macchiato.terminal
   changed_when: false
-  when: "'Frappe.terminal' not in terminal_theme.stdout"
+  when: "'Macchiato.terminal' not in terminal_theme.stdout"
 
 - name: Set custom Terminal profile as default.
   ansible.builtin.command: "{{ item }}"
   with_items:
-    - defaults write com.apple.terminal 'Default Window Settings' -string Frappe
-    - defaults write com.apple.terminal 'Startup Window Settings' -string Frappe
+    - defaults write com.apple.terminal 'Default Window Settings' -string Macchiato
+    - defaults write com.apple.terminal 'Startup Window Settings' -string Macchiato
   changed_when: false
-  when: "'Frappe' not in terminal_theme.stdout"
+  when: "'Macchiato' not in terminal_theme.stdout"
