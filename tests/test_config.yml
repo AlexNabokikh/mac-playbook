@@ -1,6 +1,8 @@
 ---
 username: "{{ lookup('env', 'USER') }}"
 
+configure_dotfiles: false
+
 create_directories: true
 directories:
   - $HOME/Documents/repositories/

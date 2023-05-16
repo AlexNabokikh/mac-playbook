@@ -1,6 +1,7 @@
 ---
 downloads: ~/.ansible-downloads/
 
+configure_dotfiles: false
 configure_osx: true
 configure_zsh: true
 zsh_plugins:
