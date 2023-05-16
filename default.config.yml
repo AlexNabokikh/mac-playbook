@@ -1,88 +1,31 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_dotfiles: true
-configure_gpg: false
-configure_osx: false
-configure_terminal: true
-configure_tmux: false
-install_oh_my_zsh: true
-install_vim_plug: false
+configure_osx: true
+configure_zsh: true
+zsh_plugins:
+  - zsh-syntax-highlighting
+  - zsh-history-substring-search
+
+configure_tmux: true
+tmux_dir: $HOME/.tmux
 
 create_directories: true
 directories:
   - $HOME/Documents/repositories
 
 install_extra_packages: true
-pip_executable: pip
 pip_packages:
-  - name: awscli
+  - name: pip
     state: latest
 
-configure_dock: true
-dockitems_remove:
-  - TV
-  - Podcasts
-
-dockitems_persist:
-  - name: Firefox
-    path: /Applications/Firefox.app/
-    pos: 1
-  - name: Visual Studio Code
-    path: /Applications/Visual Studio Code.app/
-    pos: 2
-
-configure_sudoers: true
-sudoers_custom_config: |
-  # Allow users in admin group to use sudo with no password.
-  %admin ALL=(ALL) NOPASSWD: ALL
+npm_packages:
+  - name: neovim
+    state: latest
 
 install_fonts: true
 installed_nerdfonts:
   - Meslo
 
-dotfiles_repo: https://github.com/AlexNabokikh/dotfiles
-dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Documents/repositories/dotfiles
-dotfiles_files:
-  - .gitconfig
-  - .inputrc
-  - .osx
-  - .p10k.zsh
-  - .tmux.conf
-  - .vimrc
-  - .zshrc
-
 homebrew_installed_packages:
   - fzf
-  - git
-  - gpg
-  - helm
-  - htop
-  - jq
-  - tfenv
-  - tflint
-  - tmux
-  - vim
-
-homebrew_taps:
-  - homebrew/bundle
-  - homebrew/cask
-
-homebrew_cask_appdir: /Applications
-homebrew_cask_apps:
-  - appcleaner
-  - docker
-  - dozer
-  - firefox
-  - visual-studio-code
-
-mas_installed_apps:
-  - {id: 937984704, name: Amphetamine}
-mas_email: ""
-mas_password: ""
-
-osx_script: ~/.osx --no-restart
-
-# Glob pattern to ansible task files to run after all other tasks are finished.
-post_provision_tasks: []
