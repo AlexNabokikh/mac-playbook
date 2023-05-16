@@ -10,26 +10,11 @@ sudoers_custom_config: |
   # Allow users in sudo group to use sudo with no password.
   %sudo ALL=(ALL) NOPASSWD: ALL
 
-configure_dotfiles: true
-dotfiles_repo: https://github.com/AlexNabokikh/dotfiles
-dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Documents/repositories/dotfiles
-dotfiles_files:
-  - .gitconfig
-
 install_fonts: true
 installed_nerdfonts:
   - Meslo
 
-apt_packages:
-  - fzf
-
-install_snap: true
-snap_packages:
-  - name: hello-world
-
-install_homebrew: true
-homebrew_packages:
+homebrew_installed_packages:
   - name: hello
 
 pip_packages:
