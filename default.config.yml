@@ -4,9 +4,14 @@ downloads: ~/.ansible-downloads/
 configure_dotfiles: false
 configure_osx: true
 configure_zsh: true
+# Plugin names have to be in the format github_user/plugin_name
 zsh_plugins:
-  - zsh-syntax-highlighting
-  - zsh-history-substring-search
+  - zsh-users/zsh-syntax-highlighting
+  - zsh-users/zsh-history-substring-search
+
+# Theme names have to be in the format github_user/theme_name
+zsh_themes:
+  - romkatv/powerlevel10k
 
 configure_tmux: true
 tmux_dir: $HOME/.tmux

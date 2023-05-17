@@ -36,6 +36,7 @@ This playbook installs and configures most of the software I use on my OSX machi
     - Configure custom sudoers.
   - **Zsh**
     - Install and configure [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh).
+    - Install custom OMZ plugins and themes.
   - **TMUX**
     - Install and configure tmux with TPM (plugin manager)
 
