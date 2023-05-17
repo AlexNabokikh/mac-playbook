@@ -1,6 +1,7 @@
 # macOS Ansible Playbook
 
-![badge-gh-actions]
+![badge-gh-tests]
+![badge-gh-release]
 ![badge-license]
 
 This playbook installs and configures most of the software I use on my OSX machine for software development.
@@ -11,7 +12,6 @@ This playbook installs and configures most of the software I use on my OSX machi
 - [Installation](#installation)
 - [Running a specific set of tagged tasks](#running-a-specific-set-of-tagged-tasks)
 - [Overriding Defaults](#overriding-defaults)
-- [Included Applications / Configuration (Default)](#included-applications--configuration-default)
 
 ## Playbook capabilities
 
@@ -31,16 +31,13 @@ This playbook installs and configures most of the software I use on my OSX machi
     - Install chosen custom fonts.
   - **directories**
     - Create custom user directories.
-  - **gpg config**
-  - Copy users' gpg config and agent config to the home directory.
 - **Terminal Settings**
   - **Sudoers**
     - Configure custom sudoers.
-  - **Vim**
-    - Install [Vim-plug plugin manager](https://github.com/junegunn/vim-plug).
-    - Install and update plugins from your .vimconfig.
-  - **Oh-My-Zsh**
+  - **Zsh**
     - Install and configure [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh).
+  - **TMUX**
+    - Install and configure tmux with TPM (plugin manager)
 
 ## Installation
 
@@ -100,8 +97,6 @@ installed_nerdfonts:
 
 homebrew_installed_packages:
   - git
-  - tmux
-  - vim
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -115,26 +110,6 @@ mas_email: ""
 mas_password: ""
 ```
 
-## Included Applications / Configuration (Default)
-
-Packages (installed with Homebrew):
-
-- appcleaner
-- docker
-- dozer
-- firefox
-- fzf
-- git
-- gpg
-- helm
-- htop
-- jq
-- tfenv
-- tflint
-- tmux
-- vim
-- visual-studio-code
-
 ## Author
 
 This project was created by [Alexander Nabokikh](https://www.linkedin.com/in/nabokih/) (originally forked from Jeff Geerling's repository: [geerlingguy/mac-dev-playbook](https://github.com/geerlingguy/mac-dev-playbook)).
@@ -145,5 +120,6 @@ This software is available under the following licenses:
 
 - **[MIT](https://github.com/AlexNabokikh/mac-playbook/blob/master/LICENSE)**
 
-[badge-gh-actions]: https://github.com/AlexNabokikh/windows-playbook/actions/workflows/release.yaml/badge.svg
+[badge-gh-tests]: https://github.com/AlexNabokikh/mac-playbook/actions/workflows/ci.yml/badge.svg
+[badge-gh-release]: https://github.com/AlexNabokikh/mac-playbook/actions/workflows/release.yaml/badge.svg
 [badge-license]: https://img.shields.io/badge/License-MIT-informational

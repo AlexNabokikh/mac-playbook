@@ -45,17 +45,11 @@
       when: install_fonts
       tags: ["fonts"]
 
-    - name: Include gpg task configuration.
+    - name: Include zsh task configuration.
       ansible.builtin.import_tasks:
-        file: tasks/gpg.yml
-      when: configure_gpg
-      tags: ["gpg"]
-
-    - name: Include oh-my-zsh task configuration.
-      ansible.builtin.import_tasks:
-        file: tasks/oh-my-zsh.yml
-      when: install_oh_my_zsh
-      tags: ["ohmyz"]
+        file: tasks/zsh.yml
+      when: configure_zsh
+      tags: ["zsh"]
 
     - name: Include osx task configuration.
       ansible.builtin.import_tasks:
@@ -74,15 +68,3 @@
         file: tasks/tmux.yml
       when: configure_tmux
       tags: ["tmux"]
-
-    - name: Include terminal task configuration.
-      ansible.builtin.import_tasks:
-        file: tasks/terminal.yml
-      when: configure_terminal
-      tags: ["terminal"]
-
-    - name: Include vim-plug task configuration.
-      ansible.builtin.import_tasks:
-        file: tasks/vim-plug.yml
-      when: install_vim_plug
-      tags: ["vim"]

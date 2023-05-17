@@ -1,0 +1,35 @@
+---
+username: "{{ lookup('env', 'USER') }}"
+
+configure_dotfiles: false
+
+create_directories: true
+directories:
+  - $HOME/Documents/repositories/
+
+configure_sudoers: true
+sudoers_custom_config: |
+  # Allow users in sudo group to use sudo with no password.
+  %sudo ALL=(ALL) NOPASSWD: ALL
+
+install_fonts: true
+installed_nerdfonts:
+  - Meslo
+
+homebrew_installed_packages:
+  - name: hello
+
+pip_packages:
+  - name: pip
+    state: latest
+
+npm_packages:
+  - name: neovim
+    state: latest
+
+configure_zsh: true
+zsh_plugins:
+  - zsh-syntax-highlighting
+
+configure_tmux: true
+tmux_dir: $HOME/.tmux
