@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.1.0](https://github.com/AlexNabokikh/mac-playbook/compare/v3.0.0...v3.1.0) (2023-05-17)
+
+
+### Features
+
+* **zsh:** added custom omz themes installation task ([e6c2657](https://github.com/AlexNabokikh/mac-playbook/commit/e6c2657f3bfd0692c46999a2e445f9cc53460ebd))
+
 ## [3.0.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.9.0...v3.0.0) (2023-05-17)
 
 
