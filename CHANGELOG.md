@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.9.0...v3.0.0) (2023-05-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* Removed redundant tasks, added integration test
+
+### Features
+
+* playbook refactored ([165a878](https://github.com/AlexNabokikh/mac-playbook/commit/165a87806e68aaa4a3a49718903780599a9325e0))
+
 ## [2.9.0](https://github.com/AlexNabokikh/mac-playbook/compare/v2.8.0...v2.9.0) (2023-05-06)
 
 
