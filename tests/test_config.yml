@@ -21,7 +21,7 @@ installed_nerdfonts:
   - Meslo
 
 homebrew_installed_packages:
-  - name: hello
+  - name: npm
 
 pip_packages:
   - name: pip
