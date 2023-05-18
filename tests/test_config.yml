@@ -5,6 +5,7 @@ mas_installed_apps: false
 mas_installed_app_ids: false
 configure_dock: false
 configure_osx: true
+osx_script: ~/.osx --no-restart
 
 configure_dotfiles: true
 dotfiles_repo: https://github.com/AlexNabokikh/dotfiles
