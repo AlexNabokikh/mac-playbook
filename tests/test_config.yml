@@ -4,8 +4,14 @@ username: "{{ lookup('env', 'USER') }}"
 mas_installed_apps: false
 mas_installed_app_ids: false
 configure_dock: false
+configure_osx: true
 
-configure_dotfiles: false
+configure_dotfiles: true
+dotfiles_repo: https://github.com/AlexNabokikh/dotfiles
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Documents/repositories/dotfiles
+dotfiles_files:
+  - .osx
 
 create_directories: true
 directories:
