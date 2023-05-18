@@ -1,5 +1,5 @@
 ---
-name: CI
+name: Test
 on:
   push:
     branches:
@@ -56,3 +56,6 @@ jobs:
 
       - name: Test the playbook's syntax
         run: ansible-playbook main.yml --syntax-check
+
+      - name: Test the playbook.
+        run: ansible-playbook main.yml

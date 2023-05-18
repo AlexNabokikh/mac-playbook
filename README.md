@@ -121,6 +121,6 @@ This software is available under the following licenses:
 
 - **[MIT](https://github.com/AlexNabokikh/mac-playbook/blob/master/LICENSE)**
 
-[badge-gh-tests]: https://github.com/AlexNabokikh/mac-playbook/actions/workflows/ci.yml/badge.svg
+[badge-gh-tests]: https://github.com/AlexNabokikh/mac-playbook/actions/workflows/test.yml/badge.svg
 [badge-gh-release]: https://github.com/AlexNabokikh/mac-playbook/actions/workflows/release.yaml/badge.svg
 [badge-license]: https://img.shields.io/badge/License-MIT-informational
