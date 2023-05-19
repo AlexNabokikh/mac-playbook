@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.1.1](https://github.com/AlexNabokikh/mac-playbook/compare/v3.1.0...v3.1.1) (2023-05-19)
+
+
+### Bug Fixes
+
+* **ci:** added back integration test ([#28](https://github.com/AlexNabokikh/mac-playbook/issues/28)) ([bce341e](https://github.com/AlexNabokikh/mac-playbook/commit/bce341e1b3a2ccbf33ff9b8bc72ffae0306b2f95))
+
 ## [3.1.0](https://github.com/AlexNabokikh/mac-playbook/compare/v3.0.0...v3.1.0) (2023-05-17)
 
 
