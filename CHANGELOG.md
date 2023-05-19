@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.1.2](https://github.com/AlexNabokikh/mac-playbook/compare/v3.1.1...v3.1.2) (2023-05-19)
+
+
+### Bug Fixes
+
+* **extra_packages:** renamed task to confirm naming convetion ([ee4e09e](https://github.com/AlexNabokikh/mac-playbook/commit/ee4e09ecb905bba95b7e80b07d7c8db0f6928cdf))
+
 ## [3.1.1](https://github.com/AlexNabokikh/mac-playbook/compare/v3.1.0...v3.1.1) (2023-05-19)
 
 
