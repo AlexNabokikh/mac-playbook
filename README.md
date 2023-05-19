@@ -25,20 +25,22 @@ This playbook installs and configures most of the software I use on my OSX machi
 - **Dotfiles**
   - Install a set of dotfiles from a given Git repository.
 - **System Settings**
-  - **Dock**
-    - Arrange items in your macOS Dock as you want.
   - **Fonts**
     - Install chosen custom fonts.
-  - **directories**
+- **User Settings**
+  - **Directories**
     - Create custom user directories.
-- **Terminal Settings**
+  - **Dock**
+    - Arrange items in your macOS Dock as you want.
   - **Sudoers**
     - Configure custom sudoers.
   - **Zsh**
     - Install and configure [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh).
     - Install custom OMZ plugins and themes.
   - **TMUX**
-    - Install and configure tmux with TPM (plugin manager)
+    - Install and configure tmux with TPM (plugin manager).
+  - **User Script**
+    - Execute arbitrary user script.
 
 ## Installation
 
@@ -61,55 +63,7 @@ ansible-playbook main.yml -K --tags "dotfiles, homebrew"
 
 ## Overriding Defaults
 
-You can override any of the defaults configured in `default.config.yml` by creating a `config.yml` file and setting the overrides in that file. For example, you can customize the installed packages and enable/disable specific tasks with something like:
-
-```yaml
----
-create_directories: true
-directories:
-  - $HOME/Documents/repositories
-
-pip_executable: pip
-pip_packages:
-  - name: mkdocs
-
-npm_packages:
-  - name: prettier
-    state: latest
-
-configure_dock: true
-dockitems_remove:
-  - TV
-
-dockitems_persist:
-  - name: Firefox
-    path: /Applications/Firefox.app/
-    pos: 1
-  - name: Terminal
-    path: /System/Applications/Utilities/Terminal.app
-    pos: 2
-  - name: Visual Studio Code
-    path: /Applications/Visual Studio Code.app/
-    pos: 3
-
-install_fonts: true
-installed_nerdfonts:
-  - Meslo
-
-homebrew_installed_packages:
-  - git
-
-homebrew_cask_appdir: /Applications
-homebrew_cask_apps:
-  - firefox
-  - visual-studio-code
-
-mas_installed_apps:
-  - { id: 937984704, name: Amphetamine }
-  - { id: 984968384, name: Redacted }
-mas_email: ""
-mas_password: ""
-```
+You can override any of the defaults configured in `example.config.yml` by creating a `config.yml` file and setting the overrides in that file.
 
 ## Author
 

@@ -1,4 +1,0 @@
----
-- name: Run .osx dotfiles.
-  ansible.builtin.command: "{{ osx_script }}"
-  changed_when: false
