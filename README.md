@@ -55,7 +55,7 @@ This playbook installs and configures most of the software I use on my OSX machi
 
 ### Running a specific set of tagged tasks
 
-You can filter which part of the provisioning process to run by specifying a set of tags using `ansible-playbook` 's `--tags` flag. The tags available are `dotfiles`, `homebrew`, `mas`, `dock`, `sudoers`, `fonts`, `vim`, `terminal`, `directories`, and `osx` .
+You can filter which part of the provisioning process to run by specifying a set of tags using `ansible-playbook` 's `--tags` flag. The tags available are `dotfiles`, `homebrew`, `mas`, `dock`, `sudoers`, `fonts`, `directories`, etc...
 
 ```sh
 ansible-playbook main.yml -K --tags "dotfiles, homebrew"
