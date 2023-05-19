@@ -28,6 +28,7 @@ installed_nerdfonts:
 homebrew_installed_packages:
   - name: npm
 
+install_extra_packages: true
 pip_packages:
   - name: pip
     state: latest

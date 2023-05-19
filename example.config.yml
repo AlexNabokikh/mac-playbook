@@ -62,11 +62,12 @@ homebrew_packages:
 
 # Install Apple Store applications
 mas_installed_apps:
-  - {id: 1528890965, name: TextSniper - OCR simplified}
+  - { id: 1528890965, name: TextSniper - OCR simplified }
 mas_email: ""
 mas_password: ""
 
 # Install PIP packages
+install_extra_packages: true
 pip_packages:
   - name: pip
     state: latest
