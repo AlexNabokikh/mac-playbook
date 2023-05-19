@@ -1,0 +1,78 @@
+---
+# System settings
+
+# Install Nerd Fonts
+install_fonts: true
+installed_nerdfonts:
+  - Meslo
+
+# User settings
+
+# Create custom directories
+create_directories: true
+directories:
+  - $HOME/Documents/repositories/
+
+# Clone your dotfiles and link them to the home directory
+configure_dotfiles: true
+dotfiles_repo: https://github.com/AlexNabokikh/dotfiles
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Documents/repositories/dotfiles
+dotfiles_files:
+  - .p10k.zsh
+  - .zshrc
+  - .osx
+
+# Execute dotfiles script
+user_script: ~/.osx --no-restart
+
+# Configure zsh
+configure_zsh: true
+# Plugin names have to be in the format github_user/plugin_name
+
+zsh_plugins:
+  - zsh-users/zsh-syntax-highlighting
+  - zsh-users/zsh-history-substring-search
+
+# Theme names have to be in the format github_user/theme_name
+zsh_themes:
+  - romkatv/powerlevel10k
+
+# Install and configure tmux
+configure_tmux: true
+tmux_dir: $HOME/.tmux
+
+# Configure the Dock via dockutil.
+configure_dock: true
+dockitems_remove:
+  - TV
+  - Music
+  - Podcasts
+  - Freeform
+dockitems_persist:
+  - name: Firefox
+    path: /Applications/Firefox.app/
+    pos: 1
+
+# Install homebrew and listed packages
+install_homebrew: true
+homebrew_packages:
+  - name: firefox
+  - name: npm
+
+# Install Apple Store applications
+mas_installed_apps:
+  - {id: 1528890965, name: TextSniper - OCR simplified}
+mas_email: ""
+mas_password: ""
+
+# Install PIP packages
+install_extra_packages: true
+pip_packages:
+  - name: pip
+    state: latest
+
+# Install NPM packages
+npm_packages:
+  - name: neovim
+    state: latest

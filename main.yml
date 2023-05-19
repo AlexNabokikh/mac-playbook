@@ -3,7 +3,7 @@
   hosts: all
 
   vars_files:
-    - default.config.yml
+    - example.config.yml
 
   pre_tasks:
     - name: Include playbook user configuration.
@@ -51,11 +51,11 @@
       when: configure_zsh
       tags: ["zsh"]
 
-    - name: Include osx task configuration.
+    - name: Include user script task configuration.
       ansible.builtin.import_tasks:
-        file: tasks/osx.yml
-      when: configure_osx
-      tags: ["osx"]
+        file: tasks/user_script.yml
+      when: execute_script
+      tags: ["script"]
 
     - name: Include sudoers task configuration.
       ansible.builtin.import_tasks:

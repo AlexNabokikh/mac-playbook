@@ -1,7 +1,16 @@
 ---
-username: "{{ lookup('env', 'USER') }}"
+mas_installed_apps: false
+mas_installed_app_ids: false
+configure_dock: false
+execute_script: true
+user_script: ~/.osx --no-restart
 
-configure_dotfiles: false
+configure_dotfiles: true
+dotfiles_repo: https://github.com/AlexNabokikh/dotfiles
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Documents/repositories/dotfiles
+dotfiles_files:
+  - .osx
 
 create_directories: true
 directories:
@@ -17,8 +26,9 @@ installed_nerdfonts:
   - Meslo
 
 homebrew_installed_packages:
-  - name: hello
+  - name: npm
 
+install_extra_packages: true
 pip_packages:
   - name: pip
     state: latest
@@ -29,7 +39,10 @@ npm_packages:
 
 configure_zsh: true
 zsh_plugins:
-  - zsh-syntax-highlighting
+  - zsh-users/zsh-syntax-highlighting
+
+zsh_themes:
+  - romkatv/powerlevel10k
 
 configure_tmux: true
 tmux_dir: $HOME/.tmux
