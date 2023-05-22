@@ -24,6 +24,7 @@ dotfiles_files:
   - .osx
 
 # Execute dotfiles script
+execute_script: true
 user_script: ~/.osx --no-restart
 
 # Configure zsh
@@ -74,5 +75,5 @@ pip_packages:
 
 # Install NPM packages
 npm_packages:
-  - name: neovim
+  - name: npm
     state: latest
