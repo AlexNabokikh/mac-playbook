@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.1.3](https://github.com/AlexNabokikh/mac-playbook/compare/v3.1.2...v3.1.3) (2023-05-22)
+
+
+### Bug Fixes
+
+* **example.config:** re-added missed script execution var ([b2128b4](https://github.com/AlexNabokikh/mac-playbook/commit/b2128b4683b76725f5f3752a5cbb8aa759d9b3dc))
+
 ## [3.1.2](https://github.com/AlexNabokikh/mac-playbook/compare/v3.1.1...v3.1.2) (2023-05-19)
 
 
