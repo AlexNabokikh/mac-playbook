@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.1.4](https://github.com/AlexNabokikh/mac-playbook/compare/v3.1.3...v3.1.4) (2023-06-13)
+
+
+### Bug Fixes
+
+* **extra_packages:** avoid package installation under sudo ([d6588fa](https://github.com/AlexNabokikh/mac-playbook/commit/d6588fae7aa564e20a214811207eb806360ea591))
+
 ## [3.1.3](https://github.com/AlexNabokikh/mac-playbook/compare/v3.1.2...v3.1.3) (2023-05-22)
 
 
