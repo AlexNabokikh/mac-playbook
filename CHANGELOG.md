@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.2.0](https://github.com/AlexNabokikh/mac-playbook/compare/v3.1.4...v3.2.0) (2023-08-11)
+
+
+### Features
+
+* **extra_packages:** added extra_args parameters for pip ([15fbe6b](https://github.com/AlexNabokikh/mac-playbook/commit/15fbe6bc97082639ffc66178fda0fe9ed80aa7bf))
+
 ## [3.1.4](https://github.com/AlexNabokikh/mac-playbook/compare/v3.1.3...v3.1.4) (2023-06-13)
 
 
